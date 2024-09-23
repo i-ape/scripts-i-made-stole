@@ -10,7 +10,7 @@ while true; do
 
     # Display Roman reminders
    SAYINGS=(
-             "Memento mori. Remember that you must die."
+             "Remember that you must die."
              "Look behind you, remember you are only a man.")
 
     RANDOM_INDEX=$((RANDOM % ${#SAYINGS[@]}))
