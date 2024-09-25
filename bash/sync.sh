@@ -28,10 +28,10 @@ fi
 # Perform the file synchronization using rsync
 rsync -avh --delete "$SOURCE_DIR/" "$DEST_DIR/" | tee -a "$LOG_FILE"
 
-# Explanation of rsync flags:
-# -a: Archive mode, which preserves file permissions, ownership, and timestamps
-# -v: Verbose mode, to show what's being synced
-# -h: Human-readable file sizes in output
+# sync flags:
+# -a: Archive mode
+# -v: Verbose mode
+# -h: Human-readable file sizes
 # --delete: Delete files in the destination that no longer exist in the source
 
 # Log the time of synchronization
