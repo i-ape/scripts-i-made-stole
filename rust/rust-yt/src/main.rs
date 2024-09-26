@@ -1,6 +1,3 @@
-fn main() {
-    println!("Hello, world!");
-}
 use dialoguer::{Confirm, Input};
 use std::fs;
 use std::io::{self, Write};
