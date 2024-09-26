@@ -90,7 +90,10 @@ fn main() {
             println!("\nDownload complete! Saved as '{}'", filename);
         }
         Err(e) => {
-            eprintln!("Error during download: {}", e);
+            let var_name = {
+                    eprintln!("Error during download: {}", e);
+                };
+            var_name
         }
     }
 }
