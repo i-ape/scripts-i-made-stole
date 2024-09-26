@@ -1,3 +1,6 @@
+fn main() {
+    println!("Hello, world!");
+}
 use dialoguer::{Confirm, Input};
 use std::fs;
 use std::io::{self, Write};
@@ -91,8 +94,8 @@ fn main() {
         }
         Err(e) => {
             let var_name = {
-                    eprintln!("Error during download: {}", e);
-                };
+                eprintln!("Error during download: {}", e);
+            };
             var_name
         }
     }
